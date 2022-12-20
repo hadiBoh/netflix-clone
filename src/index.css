@@ -1,13 +1,105 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  width: 100vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  display: flex;
+  overflow-x: hidden;
+  background: #000;
+}
+
+main{
+  margin-top: 2rem;
+}
+
+.sign{
+  position: relative;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-wrapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.img-wrapper img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.form-wrapper{
+  z-index: 2;
+  width: 380px;
+  min-height: 500px;
+  background: rgba(0,0,0,0.7);
+  padding: 2rem;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  gap: 1rem;
+  color: #fff;
+  margin-top: 3rem;
+}
+.form input{
+  height: 45px;
+  font-size: 1.25rem;
+  background: rgb(46, 45, 61);
+  color: rgb(165, 163, 163);
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.form button{
+  height: 45px;
+  font-size: 1.25rem;
+  width: 100%;
+  cursor: pointer;
+  background: #e50914;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.btnwrapper{
+  width: 100%;
+}
+.ppp{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.ppp p{
+  color: gray;
+}
+.form a{
+  font-size: 1.25rem;
+  max-width: 100px;
+  text-decoration: none;
+  color: rgb(241, 240, 240);
+}
+.sign-overlay{
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
 }
